@@ -8,3 +8,4 @@ deploy /opt/jboss/data-federation/data/mariadb/mariadb-java-client-1.1.8.jar
 /subsystem=datasources/data-source=mariadbDS:add(jndi-name=java:/accounts-ds,  enabled=true, use-java-context=true, driver-name=h2, connection-url="jdbc:mariadb://accounts:3306/accounts",user-name=user, password=mypass)
 /subsystem=datasources/data-source=mariadbDS:enable
 
+deploy /opt/jboss/data-federation/portfolio-vdb.xml
