@@ -5,3 +5,5 @@ In this example you will learn
  - How to pull Teiid docker image and integrate data from MariaDB and CSV file
  - Run the Docker container 
  - Run a JDBC client to access the Teiid engine started in a Docker container you created.
+ 
+Until I learn to use SWARM or Kubernetes, the receipe.txt file has all the command to follow to run the example
