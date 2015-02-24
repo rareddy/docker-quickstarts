@@ -40,7 +40,7 @@
                 FROM (EXEC MarketData.getTextFiles('*.txt')) AS f, 
                     TEXTTABLE(f.file COLUMNS symbol string, price bigdecimal HEADER) AS SP;
                 
-        CREATE VIEW Stock (product_id integer, symbol string, price bigdecimal, company_name varchar(256)) AS
+        CREATE VIEW Stock (product_id long, symbol string, price bigdecimal, company_name varchar(256)) AS
                 SELECT  A.ID, S.symbol, S.price, A.COMPANY_NAME
                     FROM StockPrices AS S, Accounts.PRODUCT AS A
                     WHERE S.symbol = A.SYMBOL;                 
