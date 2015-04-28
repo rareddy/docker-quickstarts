@@ -1,3 +1,4 @@
+connect
 /subsystem=resource-adapters/resource-adapter=fileDS:add(module=org.jboss.teiid.resource-adapter.file)
 /subsystem=resource-adapters/resource-adapter=fileDS/connection-definitions=fileDS:add(jndi-name=java:/marketdata-file, class-name=org.teiid.resource.adapter.file.FileManagedConnectionFactory, enabled=true, use-java-context=true)
 /subsystem=resource-adapters/resource-adapter=fileDS/connection-definitions=fileDS/config-properties=ParentDirectory:add(value=/opt/jboss/data-federation/data/csv)
